@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Unica+One');
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Raleway, sans-serif;
+}
+
+/*Make the 'hero group' with background image */
+
+.hero-group{
+  width:100%;
+  height:500px;
+  background-image: url(https://source.unsplash.com/cnEzFsV4Y-k);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Used to position the two groups to either side*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  color:white;
+}
+
+.brand{
+  font-size: 2rem;
+  font-family: 'Unica one', sans-serif;
+}
+
+
+/*Used to space the links and change their color/ size */
+.links a {
+  color:white;
+  margin: 0px 10px;
+  font-size: 1.2rem
+}
+
+/*Group and position header text, used flex-direction: column to center the h1 and h2*/
+
+.hero-text{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color:white;
+  font-family: 'Unica one', sans-serif;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/*General positioning of text, flexbox to make elements sit side by side*/
+
+.text-group {
+  width:100%;
+  display:flex;
+  margin-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*Flex-grow makes elements automatically grow to fill available space.
+
+Text - content is also a flexbox for centering text when it is too small to fill
+*/
+
+.text-content{
+  flex-grow: 1;
+  padding: 0 10px;
+  display: flex;
+  align-content: center;
+  align-items: center
+}
+
+.text-image{
+  width:33.3333333%;
+  max-width: 400px;
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-1 {
+  background-image: url(https://source.unsplash.com/lvoVnv3iKe8);
+}
+
+.image-2 {
+  background-image: url(https://source.unsplash.com/7JZPXJRu7jU);
+}
+
+/*card-grid is flexbox to eliminate space between cards and to let cards stretch */
+
+.card-grid {
+  display:flex;
+  margin-top: 10px;
+}
+
+/*For cards that are one half size their container.  Uses vw to keep elements square as width changes.*/
+
+.card-half-container {
+  display: flex;
+  width:50%;
+  align-content: stretch;
+  height:50vw;
+  flex-wrap: wrap;
+}
+
+.card-full {
+  width:100%;
+  background-color: red; 
+  display: flex;
+}
+
+.card-half {
+  width:50%;
+  background-color: blue;
+  display: flex;
+}
+
+
+/*Use align-self property to push the text to the bottom of the flex-box*/
+
+.card-subtitle {
+  align-self: flex-end;
+  width: 100%;
+  background-color: rgba(0,0,0,.2);
+  color:white;
+  padding:5px
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+.card1 {
+  background-image: url(https://source.unsplash.com/PaFUKopuirM);
+}
+
+.card2 {
+  background-image: url(https://source.unsplash.com/HpK0nVi7xOw);
+}
+
+
+.card3 {
+  background-image: url(https://source.unsplash.com/GJCWj-n3h4E);
+}
+
+.card4 {
+  background-image: url(https://source.unsplash.com/92dgYPsir9k);
+}
+
+
+/* Justify-content: space-around used to evenly distribute links along footer. */
+
+footer {
+  margin-top:10px;
+  display:flex;
+  background-color: #1f1f1f;
+  height:50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color:white;
+}
+
+
+
+
+
